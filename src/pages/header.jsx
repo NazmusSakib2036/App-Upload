@@ -24,7 +24,7 @@ const header = () => {
 
             </div>
             <div className="header_btn">
-                <button className="install_btn">Download</button>
+                <a href='' className="install_btn">Download</a>
                 </div>
             </div>
 

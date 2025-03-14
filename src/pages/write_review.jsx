@@ -28,7 +28,8 @@ const WriteReview = () => {
 
             {showReview && (
                 <div className="overlay" onClick={() => setShowReview(false)}>
-                    <div className="rate-this-app" onClick={(e) => e.stopPropagation()}>
+                    <form action="">
+                        <div className="rate-this-app" onClick={(e) => e.stopPropagation()}>
 
                         <div className="close_all">
                             <div className="heading_review">
@@ -52,6 +53,7 @@ const WriteReview = () => {
                                         name="star"
                                         value={star}
                                         onChange={() => handleRating(star)}
+                                        required
                                     />
                                     <span className={`star-input ${rating >= star ? "selected" : ""}`}>&#9733;</span>
                                 </label>
@@ -59,11 +61,12 @@ const WriteReview = () => {
                         </div>
 
 
-                        <textarea className="review-text" placeholder="Write a review"></textarea>
+                        <textarea className="review-text" placeholder="Write a review" required></textarea>
 
 
                         <button className="submit-review">Submit</button>
                     </div>
+                    </form>
                 </div>
             )}
         </>

@@ -68,6 +68,7 @@ body {
 
 .header_btn .install_btn {
   background-color: #00a173;
+  text-decoration: none;
   color: white;
   font-size: 1.3rem;
   font-family: sans-serif;
