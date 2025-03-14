@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+}
+
+.top_head {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header_logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header_title .app_name {
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.header_title .Company_name {
+  font-size: 1rem;
+  color: gray;
+}
+
+.header_btn .install_btn {
+  background-color: #00a173;
+  color: white;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: blue;
+  }
+
+  &:focus {
+    background-color: blue;
+  }
+
+}
+
+.header_all_con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 4rem;
+  gap: 3rem;
+}
+
+.review,
+.size,
+.download {
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.star {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.star_count,
+.size_count {
+  color: #555;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header_logo img {
+    width: 60px;
+  }
+
+  .header_title .app_name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    padding-top: 1.5rem;
+  }
+
+  .top_head {
+    align-items: center;
+  }
+
+  .header_all_con {
+    align-items: flex-start;
+    margin-top: 10px;
+    padding-left: 2rem;
+    gap: 3rem;
+  }
+
+  .review,
+  .size,
+  .download {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_title .app_name {
+    font-size: 1.4rem;
+  }
+
+  .header_title .Company_name {
+    font-size: 0.9rem;
+  }
+
+  .header .install_btn {
+    padding: 3px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header_title .app_name {
+    font-size: 1.5em;
+    padding: 5px 0;
+  }
+
+  .header_title .Company_name {
+    font-size: 0.8rem;
+  }
+
+  .header .install_btn {
+    font-size: 0.9rem;
+    padding: 5px 17px;
+  }
+
+  .star_count,
+  .size_count {
+    font-size: .9rem;
+    font-weight: bold;
+  }
+
+  .header_all_con .star{
+    font-size: 1rem;
+  }
+}

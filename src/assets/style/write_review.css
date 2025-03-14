@@ -1,0 +1,171 @@
+
+
+/* Overlay for the popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Review Popup Box */
+.rate-this-app {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Close Button and Title Container */
+.close_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Review Section Title */
+.rate-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin-left: 5rem;
+    padding-top: 1rem;
+}
+
+/* Close Button */
+.close-review {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    color: #333;
+    top: 0;
+    right: 0;
+    margin-top: -4rem;
+}
+
+.close-review:hover {
+    color: red;
+}
+
+/* Review Description */
+.rate-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Star Rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #ccd0d6;
+    transition: color 0.2s ease-in-out;
+}
+
+.star-rating input:checked+.star-input,
+.star-rating label:hover .star-input,
+.star-rating label:hover~label .star-input {
+    color: blue;
+}
+
+.star-input.selected {
+    color: blue;
+}
+
+/* Review Input */
+.review-text {
+    width: 100%;
+    height: 80px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Submit Review Button */
+.submit-review {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.submit-review:hover {
+    background: greenyellow;
+    color: black;
+}
+
+/* Write Review Button */
+.show_write_review {
+    display: flex;
+    margin: 20px;
+    padding: 7px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.show_write_review:hover {
+    background: blue;
+}
+
+
+@media (max-width: 768px) {
+    .show_write_review {
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+}
