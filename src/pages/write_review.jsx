@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../assets/style/write_review.css";
+import Sakib from "../assets/image/sakib(bg).png";
 
 const WriteReview = () => {
     const [rating, setRating] = useState(null);
@@ -16,7 +17,7 @@ const WriteReview = () => {
             date: "March 01, 2025",
             rating: 5,
             text: "I'm not happy with the new updates. When you send a document to another user the time doesn't really show because it's in white text. Also, there should be another page for status updates and another page for channels, these two shouldn't be at the same place, it's making navigation difficult.",
-            avatar: "../../src//assets/image/sakib(bg).png",
+            avatar: Sakib,
         }
     ];
 

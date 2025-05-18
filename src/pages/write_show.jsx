@@ -1,5 +1,8 @@
 import React from "react";
 import "../assets/style/write_show.css";
+import Sakib from "../assets/image/sakib(bg).png";
+import LOGO from "../../src/assets/image/logo.png"
+
 
 const reviews = [
   {
@@ -8,7 +11,7 @@ const reviews = [
     date: "March 01, 2025",
     rating: 5,
     text: "I'm not happy with the new updates. When you send a document to another user the time doesn't really show because it's in white text. Also there should be another page for status updates and another page for channels, these two shouldn't be at the same place, it's making navigation through, especially status updates, really difficult. I will come back if I see something else.",
-    avatar: "../../src/assets/image/sakib(bg).png"
+    avatar: Sakib
   },
   {
     id: 2,
@@ -16,7 +19,7 @@ const reviews = [
     date: "March 09, 2025",
     rating: 3,
     text: "I'm not happy with the new updates. When you send a document to another user the time doesn't really show because it's in white text. Also there should be another page for status updates and another page for channels.",
-    avatar: "../../src/assets/image/logo.png"
+    avatar: LOGO
   },
   {
     id: 3,
@@ -24,7 +27,7 @@ const reviews = [
     date: "March 25, 2025",
     rating: 0,
     text: "I'm not happy with the new updates. When you send a document to another user the time.",
-    avatar: "../../src/assets/image/logo.png"
+    avatar: LOGO
   }
 ];
 

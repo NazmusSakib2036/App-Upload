@@ -18,8 +18,8 @@ const header = () => {
                 <img src={Logo} alt="App logo" />
             </div>
             <div className="header_title">
-                <p className='app_name'>Fabred</p>
-                <p className='Company_name'>Fahim Platforms, Inc.</p>
+                <p className='app_name'>NUB SawmApp</p>
+                <p className='Company_name'>Sakib Platforms, Inc.</p>
                 </div>
 
             </div>
